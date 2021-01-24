@@ -23,5 +23,6 @@ inputRef.addEventListener("blur", (event) => {
 });
 
 inputRef.addEventListener("focus", (event) => {
-  event.target.classList.remove("invalid");
+  event.target.classList.remove("invalid","valid");
+  
 });

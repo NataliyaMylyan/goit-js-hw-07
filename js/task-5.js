@@ -3,10 +3,10 @@ const inputRef = document.querySelector("#name-input");
 const spanRef = document.querySelector("#name-output");
 //console.dir(spanRef);
 
-document.addEventListener("keyup", () => {
-  !inputRef.value
-    ? (spanRef.textContent = "незнакомец")
-    : (spanRef.textContent = inputRef.value);
+document.addEventListener("input", () => {
+  
+  spanRef.textContent = inputRef.value || "незнакомец";
+ 
   //console.dir(inputRef);
   //console.log(spanRef.textContent);
 });
